@@ -1,0 +1,91 @@
+@model IEnumerable<Cours.Models.Commande>
+
+<div class="mb-4">
+    <form asp-action="ListeCommandes" method="get" class="flex items-center space-x-4">
+        <label for="etat" class="font-semibold">Filtrer par état :</label>
+        <select name="etat" id="etat" class="border border-gray-300 px-4 py-2 rounded">
+            <option value="">Tous</option>
+            <option value="enCours">En cours</option>
+            <option value="actif">Validée</option>
+            <option value="inactif">Refusée</option>
+        </select>
+        <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
+            Filtrer
+        </button>
+    </form>
+</div>
+
+<table class="table-auto border-collapse border border-gray-300 w-full">
+    <thead>
+        <tr class="bg-gray-200">
+            <th class="border border-gray-300 px-4 py-2">ID</th>
+            <th class="border border-gray-300 px-4 py-2">Client</th>
+            <th class="border border-gray-300 px-4 py-2">Date de commande</th>
+            <th class="border border-gray-300 px-4 py-2">Prix total</th>
+            <th class="border border-gray-300 px-4 py-2">État</th>
+            <th class="border border-gray-300 px-4 py-2">Actions</th>
+            <th class="border border-gray-300 px-4 py-2">Paiement</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var commande in Model)
+        {
+            <tr>
+                <td class="border border-gray-300 px-4 py-2">@commande.Id</td>
+                <td class="border border-gray-300 px-4 py-2">@commande.Client?/td>
+                <td class="border border-gray-300 px-4 py-2">@commande.DateCommande.ToString("dd/MM/yyyy")</td>
+                <td class="border border-gray-300 px-4 py-2">@commande.PrixTotal</td>
+                <td class="border border-gray-300 px-4 py-2">
+                    @if (commande.etat == Cours.Enum.Etat.enCours)
+                    {
+                        <span class="text-blue-500 font-bold">En cours</span>
+                    }
+                    else if (commande.etat == Cours.Enum.Etat.actif)
+                    {
+                        <span class="text-green-600 font-bold">Validée</span>
+                    }
+                    else if (commande.etat == Cours.Enum.Etat.inactif)
+                    {
+                        <span class="text-red-600 font-bold">Refusée</span>
+                    }
+                </td>
+                <td class="border border-gray-300 px-4 py-2">
+                    @if (commande.etat == Cours.Enum.Etat.enCours)
+                    {
+                        <form asp-action="ValiderCommande" asp-controller="Client" method="post" class="inline-block">
+                            <input type="hidden" name="id" value="@commande.Id" />
+                            <button type="submit" class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600">
+                                Valider
+                            </button>
+                        </form>
+                        <form asp-action="RefuserCommande" asp-controller="Client" method="post" class="inline-block ml-2">
+                            <input type="hidden" name="id" value="@commande.Id" />
+                            <button type="submit" class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600">
+                                Refuser
+                            </button>
+                        </form>
+                    }
+                    else
+                    {
+                        <span class="italic text-gray-500">Aucune action</span>
+                    }
+                </td>
+                <td class="border border-gray-300 px-4 py-2">
+                    @if (commande.etat == Cours.Enum.Etat.actif)
+                    {
+                        <form asp-action="FairePaiement" asp-controller="Client" method="post" class="inline-block">
+                            <input type="hidden" name="commandeID" value="@commande.Id" />
+                            <button type="submit" class="bg-yellow-500 text-white px-4 py-2 rounded hover:bg-yellow-600">
+                                Payer
+                            </button>
+                        </form>
+                    }
+                    else
+                    {
+                        <span class="italic text-gray-500">Non applicable</span>
+                    }
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

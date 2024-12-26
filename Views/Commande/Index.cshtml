@@ -1,0 +1,62 @@
+@model IEnumerable<Cours.Models.Commande>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liste des Commandes</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 min-h-screen p-8">
+    <div class="max-w-7xl mx-auto bg-white p-6 rounded-lg shadow-lg">
+        <div class="flex justify-between items-center mb-4">
+            <h1 class="text-2xl font-bold text-gray-800">Liste des Commandes</h1>
+            <a asp-action="Create" class="px-4 py-2 bg-blue-500 text-white rounded-lg shadow hover:bg-blue-600">
+                Ajouter une Commande
+            </a>
+        </div>
+        <div class="overflow-x-auto">
+            <table class="min-w-full table-auto border-collapse border border-gray-300">
+                <thead>
+                    <tr class="bg-gray-200 text-gray-600 uppercase text-sm leading-normal">
+                        <th class="py-3 px-6 text-left">Date de Commande</th>
+                        <th class="py-3 px-6 text-left">Prix Total</th>
+                        <th class="py-3 px-6 text-left">Client</th>
+                        <th class="py-3 px-6 text-left">Livreur</th>
+                        <th class="py-3 px-6 text-left">Paiement</th>
+                        <th class="py-3 px-6 text-left">Créé le</th>
+                        <th class="py-3 px-6 text-left">Mis à jour le</th>
+                        <th class="py-3 px-6 text-center">Actions</th>
+                    </tr>
+                </thead>
+                <tbody class="text-gray-700 text-sm font-light">
+                    @foreach (var item in Model)
+                    {
+                        <tr class="border-b border-gray-200 hover:bg-gray-100">
+                            <td class="py-3 px-6">@Html.DisplayFor(modelItem => item.DateCommande)</td>
+                            <td class="py-3 px-6">@Html.DisplayFor(modelItem => item.PrixTotal)</td>
+                            <td class="py-3 px-6">@Html.DisplayFor(modelItem => item.Client.Id)</td>
+                            <td class="py-3 px-6">@Html.DisplayFor(modelItem => item.livreur.Id)</td>
+                            <td class="py-3 px-6">@Html.DisplayFor(modelItem => item.paiementId)</td>
+                            <td class="py-3 px-6">@Html.DisplayFor(modelItem => item.CreateAt)</td>
+                            <td class="py-3 px-6">@Html.DisplayFor(modelItem => item.UpdateAt)</td>
+                            <td class="py-3 px-6 text-center">
+                                <div class="flex justify-center space-x-4">
+                                    <a asp-action="Edit" asp-route-id="@item.Id" class="text-blue-500 hover:text-blue-600">Modifier</a>
+                                    <a asp-action="Details" asp-route-id="@item.Id" class="text-green-500 hover:text-green-600">Détails</a>
+                                    <a asp-action="Delete" asp-route-id="@item.Id" class="text-red-500 hover:text-red-600">Supprimer</a>
+                                </div>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

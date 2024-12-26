@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\ges_commande.props" />
+</Project>

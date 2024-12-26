@@ -1,0 +1,167 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = ges_commande
+build_property.RootNamespace = ges_commande
+build_property.ProjectDir = C:\Users\USER\Desktop\C#\projet\ges_commande\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\USER\Desktop\C#\projet\ges_commande
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/USER/Desktop/C\#/projet/ges_commande/Views/Access/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjZXNzXExvZ2luLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/USER/Desktop/C\#/projet/ges_commande/Views/Client/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50XENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/USER/Desktop/C\#/projet/ges_commande/Views/Client/CreerCommande.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50XENyZWVyQ29tbWFuZGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/USER/Desktop/C\#/projet/ges_commande/Views/Client/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50XERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/USER/Desktop/C\#/projet/ges_commande/Views/Client/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50XERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/USER/Desktop/C\#/projet/ges_commande/Views/Client/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50XEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/USER/Desktop/C\#/projet/ges_commande/Views/Client/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50XEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/USER/Desktop/C\#/projet/ges_commande/Views/Client/ListeCommandes.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50XExpc3RlQ29tbWFuZGVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/USER/Desktop/C\#/projet/ges_commande/Views/Commande/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tbWFuZGVcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/USER/Desktop/C\#/projet/ges_commande/Views/Commande/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tbWFuZGVcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/USER/Desktop/C\#/projet/ges_commande/Views/Commande/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tbWFuZGVcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/USER/Desktop/C\#/projet/ges_commande/Views/Commande/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tbWFuZGVcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/USER/Desktop/C\#/projet/ges_commande/Views/Commande/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tbWFuZGVcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/USER/Desktop/C\#/projet/ges_commande/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/USER/Desktop/C\#/projet/ges_commande/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/USER/Desktop/C\#/projet/ges_commande/Views/Paiement/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFpZW1lbnRcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/USER/Desktop/C\#/projet/ges_commande/Views/Paiement/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFpZW1lbnRcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/USER/Desktop/C\#/projet/ges_commande/Views/Paiement/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFpZW1lbnRcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/USER/Desktop/C\#/projet/ges_commande/Views/Paiement/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFpZW1lbnRcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/USER/Desktop/C\#/projet/ges_commande/Views/Paiement/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFpZW1lbnRcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/USER/Desktop/C\#/projet/ges_commande/Views/Produits/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVpdHNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/USER/Desktop/C\#/projet/ges_commande/Views/Produits/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVpdHNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/USER/Desktop/C\#/projet/ges_commande/Views/Produits/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVpdHNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/USER/Desktop/C\#/projet/ges_commande/Views/Produits/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVpdHNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/USER/Desktop/C\#/projet/ges_commande/Views/Produits/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVpdHNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/USER/Desktop/C\#/projet/ges_commande/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/USER/Desktop/C\#/projet/ges_commande/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/USER/Desktop/C\#/projet/ges_commande/Views/User/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/USER/Desktop/C\#/projet/ges_commande/Views/User/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/USER/Desktop/C\#/projet/ges_commande/Views/User/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/USER/Desktop/C\#/projet/ges_commande/Views/User/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/USER/Desktop/C\#/projet/ges_commande/Views/User/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/USER/Desktop/C\#/projet/ges_commande/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/USER/Desktop/C\#/projet/ges_commande/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/USER/Desktop/C\#/projet/ges_commande/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-f1lljro1y3

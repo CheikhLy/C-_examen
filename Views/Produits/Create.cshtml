@@ -1,0 +1,53 @@
+@model Cours.Models.Produits
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Créer un produit</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 min-h-screen flex items-center justify-center">
+    <div class="w-full max-w-lg bg-white shadow-lg rounded-lg p-8">
+        <h1 class="text-2xl font-bold text-gray-800 text-center mb-6">Créer un produit</h1>
+        <form asp-action="Create" class="space-y-4">
+            <div>
+                <label asp-for="Libelle" class="block text-sm font-medium text-gray-700">Libellé</label>
+                <input asp-for="Libelle" class="mt-1 block w-full border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500" />
+                <span asp-validation-for="Libelle" class="text-sm text-red-500"></span>
+            </div>
+            <div>
+                <label asp-for="Prix" class="block text-sm font-medium text-gray-700">Prix</label>
+                <input asp-for="Prix" type="number" step="0.01" class="mt-1 block w-full border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500" />
+                <span asp-validation-for="Prix" class="text-sm text-red-500"></span>
+            </div>
+            <div>
+                <label asp-for="Quantite" class="block text-sm font-medium text-gray-700">Quantité</label>
+                <input asp-for="Quantite" type="number" class="mt-1 block w-full border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500" />
+                <span asp-validation-for="Quantite" class="text-sm text-red-500"></span>
+            </div>
+            <div>
+                <label asp-for="CreateAt" class="block text-sm font-medium text-gray-700">Date de création</label>
+                <input asp-for="CreateAt" type="datetime-local" class="mt-1 block w-full border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500" />
+                <span asp-validation-for="CreateAt" class="text-sm text-red-500"></span>
+            </div>
+            <div>
+                <label asp-for="UpdateAt" class="block text-sm font-medium text-gray-700">Date de mise à jour</label>
+                <input asp-for="UpdateAt" type="datetime-local" class="mt-1 block w-full border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500" />
+                <span asp-validation-for="UpdateAt" class="text-sm text-red-500"></span>
+            </div>
+            <div class="flex justify-between items-center">
+                <a asp-action="Index" class="text-blue-500 hover:text-blue-600 font-medium">Retour à la liste</a>
+                <button type="submit" class="px-4 py-2 bg-blue-500 text-white font-semibold rounded-lg shadow-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
+                    Créer
+                </button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

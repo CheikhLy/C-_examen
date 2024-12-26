@@ -1,0 +1,84 @@
+@model Cours.Models.Commande
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Créer une commande</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 min-h-screen flex items-center justify-center">
+    <div class="w-full max-w-2xl bg-white shadow-lg rounded-lg p-8">
+        <h1 class="text-2xl font-bold text-center text-gray-800 mb-6">Créer une commande</h1>
+        <form asp-action="Create" class="space-y-6">
+            <div asp-validation-summary="ModelOnly" class="text-red-500 text-sm mb-4"></div>
+
+            <div>
+                <label asp-for="DateCommande" class="block text-gray-700 font-semibold mb-2">Date de commande</label>
+                <input asp-for="DateCommande" type="date" 
+                       class="w-full border border-gray-300 rounded-lg px-4 py-2 text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-400" />
+                <span asp-validation-for="DateCommande" class="text-red-500 text-sm"></span>
+            </div>
+
+            <div>
+                <label asp-for="PrixTotal" class="block text-gray-700 font-semibold mb-2">Prix total</label>
+                <input asp-for="PrixTotal" type="number" step="0.01" 
+                       class="w-full border border-gray-300 rounded-lg px-4 py-2 text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-400" />
+                <span asp-validation-for="PrixTotal" class="text-red-500 text-sm"></span>
+            </div>
+
+            <div>
+                <label asp-for="ClientId" class="block text-gray-700 font-semibold mb-2">Client</label>
+                <select asp-for="ClientId" asp-items="ViewBag.ClientId" 
+                        class="w-full border border-gray-300 rounded-lg px-4 py-2 text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-400">
+                </select>
+            </div>
+
+            <div>
+                <label asp-for="LivreurId" class="block text-gray-700 font-semibold mb-2">Livreur</label>
+                <select asp-for="LivreurId" asp-items="ViewBag.LivreurId" 
+                        class="w-full border border-gray-300 rounded-lg px-4 py-2 text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-400">
+                </select>
+            </div>
+
+            <div>
+                <label asp-for="paiementId" class="block text-gray-700 font-semibold mb-2">ID Paiement</label>
+                <input asp-for="paiementId" type="number" 
+                       class="w-full border border-gray-300 rounded-lg px-4 py-2 text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-400" />
+                <span asp-validation-for="paiementId" class="text-red-500 text-sm"></span>
+            </div>
+
+            <div>
+                <label asp-for="CreateAt" class="block text-gray-700 font-semibold mb-2">Créé à</label>
+                <input asp-for="CreateAt" type="datetime-local" 
+                       class="w-full border border-gray-300 rounded-lg px-4 py-2 text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-400" />
+                <span asp-validation-for="CreateAt" class="text-red-500 text-sm"></span>
+            </div>
+
+            <div>
+                <label asp-for="UpdateAt" class="block text-gray-700 font-semibold mb-2">Mis à jour à</label>
+                <input asp-for="UpdateAt" type="datetime-local" 
+                       class="w-full border border-gray-300 rounded-lg px-4 py-2 text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-400" />
+                <span asp-validation-for="UpdateAt" class="text-red-500 text-sm"></span>
+            </div>
+
+            <div>
+                <button type="submit" 
+                        class="w-full bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400">
+                    Créer
+                </button>
+            </div>
+        </form>
+
+        <div class="mt-6 text-center">
+            <a asp-action="Index" 
+               class="text-blue-500 hover:underline">Retour à la liste</a>
+        </div>
+    </div>
+</body>
+</html>

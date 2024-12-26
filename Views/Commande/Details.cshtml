@@ -1,0 +1,60 @@
+@model Cours.Models.Commande
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Détails de la commande</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 min-h-screen flex items-center justify-center">
+    <div class="w-full max-w-3xl bg-white shadow-lg rounded-lg p-8">
+        <h1 class="text-2xl font-bold text-gray-800 text-center mb-6">Détails de la commande</h1>
+        <dl class="divide-y divide-gray-200">
+            <div class="py-4 flex justify-between">
+                <dt class="text-gray-600 font-medium">@Html.DisplayNameFor(model => model.DateCommande)</dt>
+                <dd class="text-gray-900">@Html.DisplayFor(model => model.DateCommande)</dd>
+            </div>
+            <div class="py-4 flex justify-between">
+                <dt class="text-gray-600 font-medium">@Html.DisplayNameFor(model => model.PrixTotal)</dt>
+                <dd class="text-gray-900">@Html.DisplayFor(model => model.PrixTotal)</dd>
+            </div>
+            <div class="py-4 flex justify-between">
+                <dt class="text-gray-600 font-medium">@Html.DisplayNameFor(model => model.Client)</dt>
+                <dd class="text-gray-900">@Html.DisplayFor(model => model.Client.Id)</dd>
+            </div>
+            <div class="py-4 flex justify-between">
+                <dt class="text-gray-600 font-medium">@Html.DisplayNameFor(model => model.livreur)</dt>
+                <dd class="text-gray-900">@Html.DisplayFor(model => model.livreur.Id)</dd>
+            </div>
+            <div class="py-4 flex justify-between">
+                <dt class="text-gray-600 font-medium">@Html.DisplayNameFor(model => model.paiementId)</dt>
+                <dd class="text-gray-900">@Html.DisplayFor(model => model.paiementId)</dd>
+            </div>
+            <div class="py-4 flex justify-between">
+                <dt class="text-gray-600 font-medium">@Html.DisplayNameFor(model => model.CreateAt)</dt>
+                <dd class="text-gray-900">@Html.DisplayFor(model => model.CreateAt)</dd>
+            </div>
+            <div class="py-4 flex justify-between">
+                <dt class="text-gray-600 font-medium">@Html.DisplayNameFor(model => model.UpdateAt)</dt>
+                <dd class="text-gray-900">@Html.DisplayFor(model => model.UpdateAt)</dd>
+            </div>
+        </dl>
+        <div class="mt-6 flex justify-between">
+            <a asp-action="Edit" asp-route-id="@Model?.Id"
+               class="text-white bg-blue-500 hover:bg-blue-600 px-4 py-2 rounded-lg font-semibold">
+                Modifier
+            </a>
+            <a asp-action="Index"
+               class="text-blue-500 hover:text-blue-600 font-semibold">
+                Retour à la liste
+            </a>
+        </div>
+    </div>
+</body>
+</html>
